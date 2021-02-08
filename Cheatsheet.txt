@@ -2,10 +2,10 @@ System Maintenance (Cleaning up)
 
 ===========
 
-List packages no longer required by others
+List packages no longer required by others (Orphans)
 # pacman -Qdtq
 
-Remove packages no longer required by others
+Remove packages no longer required by others (Orphans)
 # sudo pacman -Rns $(pacman -Qtdq)
 
 Show cache in home-directory
