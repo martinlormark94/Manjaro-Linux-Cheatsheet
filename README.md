@@ -1,3 +1,5 @@
-# Manjaro-Linux 
+# Manjaro-Linux-Cheatsheet
 
-Cheatsheet with necessary commands for CLI-use of Manjaro Linux
+Cheatsheet with everyday commands for a Arch-beginner.
+
+Made by myself and for myself as a reference-guide. 
