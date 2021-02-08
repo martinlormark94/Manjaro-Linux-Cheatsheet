@@ -1,22 +1,34 @@
 System Maintenance (Cleaning up) 
 
+===========
 
+List packages no longer required by others
+# pacman -Qdtq
+
+Remove packages no longer required by others
 # sudo pacman -Rns $(pacman -Qtdq)
 
+Show cache in home-directory
+# sudo du -sh ~/.cache/
+
+Remove cache in home-directoy
+# rm -rf ~/.cache/*
+
+Clean Systemd journal
+# sudo journalctl --vacuum-size=50M
+
+Update System
+# sudo pacman -Syu
 
 pacman
 ======
 
 view logs: /var/log/pacman.log
 
-update system
-# pacman -Syu
 
 list installed packages
 # pacman -Q
 
-list packages no longer required by others
-# pacman -Qdtq
 
 search installed packages
 # pacman -Qs <name>
@@ -32,11 +44,6 @@ remove package, its dependencies and config file backups
 
 clean old packages in cache
 # pacman -Sc
-
-yaourt
-======
-
-same as pacman
 
 systemd
 =======
