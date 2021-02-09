@@ -8,6 +8,9 @@ List packages no longer required by others (Orphans)
 Remove packages no longer required by others (Orphans)
 # sudo pacman -Rns $(pacman -Qtdq)
 
+Clean old packages in cache
+# pacman -Sc
+
 Show cache in home-directory
 # sudo du -sh ~/.cache/
 
@@ -20,32 +23,29 @@ Clean Systemd journal
 Update System
 # sudo pacman -Syu
 
-pacman
 ======
 
+Pacman Commands; 
+======
 view logs: /var/log/pacman.log
-
 
 list installed packages
 # pacman -Q
 
-
-search installed packages
+Search installed packages
 # pacman -Qs <name>
 
-search packages
+Search packages
 # pacman -Ss <name>
 
-install packages
-# pacman -S <name>
+Install Package
+# Pacman -S <package_name_1><package_name_2>
 
-remove package, its dependencies and config file backups
-# pacman -Rns <name>
+Remove Package, its dependencies and config file backups
+# Pacman -Rns <package_name>
 
-clean old packages in cache
-# pacman -Sc
-
-systemd
+=======
+Systemd
 =======
 
 unit files: /usr/lib/systemd/system/ or /etc/systemd/system/
@@ -69,7 +69,7 @@ manual install of AUR packages
 ==============================
 
 update repositories
-# pacman -Sy
+# pacman -Syu
 
 grab the package
 $ curl -O <url> (e.g. https://aur.archlinux.org/packages/ya/yaourt/yaourt.tar.gz)
