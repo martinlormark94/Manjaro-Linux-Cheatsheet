@@ -23,6 +23,9 @@ Clean Systemd journal
 Update System
 # sudo pacman -Syu
 
+Update Database
+# sudo pacman -Syy
+
 ======
 
 Pacman Commands; 
