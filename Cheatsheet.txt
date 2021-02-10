@@ -41,6 +41,9 @@ Search packages
 Install Package
 # Pacman -S <package_name_1><package_name_2>
 
+Install local Package or from website
+# Pacman -U /path/to/the/package
+
 Remove Package, its dependencies and config file backups
 # Pacman -Rns <package_name>
 
