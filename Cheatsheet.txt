@@ -41,7 +41,7 @@ Search installed packages
 Search packages
 # pacman -Ss <name>
 
-Install Package
+Install Package (Always run update (pacman -Syu) before installing) 
 # Pacman -S <package_name_1><package_name_2>
 
 Install local Package or from website
